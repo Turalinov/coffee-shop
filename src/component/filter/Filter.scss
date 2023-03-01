@@ -1,0 +1,20 @@
+.filter {
+  display: flex;
+  align-items: center;
+  
+  &__title {
+    margin-right: 35px;
+  }
+  
+  &__btns {
+    display: flex;
+
+    .btn.active {
+      background-color: #ccc;
+    }
+
+    .btn + .btn {
+      margin-left: 5px;
+    }
+  }
+}

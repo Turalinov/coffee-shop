@@ -1,0 +1,25 @@
+@import './../../variables.scss';
+
+.best {
+  background-image: url('./../../assets/img/bg-best.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 80px 110px;
+  
+  .best__cards {
+    display: flex;
+
+    .card + .card {
+      margin-left: 70px;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    color: $color-black;
+    margin-bottom: 40px;
+  }
+
+  
+}

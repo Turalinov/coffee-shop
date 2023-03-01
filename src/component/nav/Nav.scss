@@ -1,0 +1,45 @@
+@import './../../variables.scss';
+
+.nav {
+    display: flex;
+    align-items: flex-end;
+    
+    &.dark {
+      .nav__item-main {
+          ::before {
+            background-image: url('./../../assets/img/icon/logo-dark.svg');
+          }
+        }
+      .nav__link {
+        color: $color-black;
+      }
+    }
+  }
+
+  .nav__item-main {
+    position: relative;
+
+    :before {
+      content: '';
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      background-image: url('./../../assets/img/icon/logo.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      top: -20px;
+      left: -30px;;
+    }
+  }
+  
+  
+
+  .nav__item + .nav__item{
+    margin-left: 40px;
+  }
+
+  .nav__link {
+    text-decoration: none;
+    color: $color-white;
+  }

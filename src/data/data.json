@@ -1,0 +1,58 @@
+{
+  "data": [
+  {
+    "id": 1,
+    "src": "/static/media/best1.93b7ca5e4837fd856f71.png",
+    "name": "Solimo Coffee Beans 2 kg",
+    "price": "10.73",
+    "best": true,
+    "country": "Brazil",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  {
+    "id": 2,
+    "src": "/static/media/best2.954ad248fd7814f4aec9.png",
+    "name": "Presto Coffee Beans 1 kg",
+    "price": "15.99",
+    "best": true,
+    "country": "Kenya",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  {
+    "id": 3,
+    "src": "/static/media/best3.3dd80ebfb69e6674fbb0.png",
+    "name": "AROMISTICO Coffee 1 kg",
+    "price": "6.99",
+    "best": true,
+    "country": "Columbia",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  {
+    "id": 4,
+    "src": "/static/media/best1.93b7ca5e4837fd856f71.png",
+    "name": "Solimo Coffee Beans 2 kg",
+    "price": "10.73",
+    "best": false,
+    "country": "Columbia",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  {
+    "id": 5,
+    "src": "/static/media/best2.954ad248fd7814f4aec9.png",
+    "name": "Presto Coffee Beans 1 kg",
+    "price": "15.99",
+    "best": false,
+    "country": "Kenya",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  {
+    "id": 6,
+    "src": "/static/media/best3.3dd80ebfb69e6674fbb0.png",
+    "name": "AROMISTICO Coffee 1 kg",
+    "price": "6.99",
+    "best": false,
+    "country": "Brazil",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  }
+]
+}

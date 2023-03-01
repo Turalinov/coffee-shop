@@ -1,0 +1,46 @@
+@import './../../variables.scss';
+
+.devider {
+  background-image: url('./../../assets/img/icon/devider.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 34px;
+
+
+  &:after,
+  &:before {
+    content: '';
+    top: 11px;
+    left: -25px;
+    position: absolute;
+    width: 60px;
+    height: 0;
+    border: 1px solid $color-white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  &:before {
+    left: -75px;
+  }
+
+  &:after{
+    left: 45px;
+  }
+  
+  &-dark {
+    background-image: url('./../../assets/img/icon/devider-dark.svg');
+
+    &:after,
+    &:before {
+      border: 1px solid $color-black;
+      box-shadow: none;
+    }
+  }
+}

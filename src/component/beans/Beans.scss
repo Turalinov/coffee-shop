@@ -1,0 +1,17 @@
+.beans ,
+.our-goods {  
+  padding: 70px 60px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 240px;
+    height: 0px;
+    border: 1px solid #000000;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+}

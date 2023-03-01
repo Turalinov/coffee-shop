@@ -1,0 +1,19 @@
+.about {
+  padding: 80px 0 100px;
+  h2 {
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .devider {
+    margin-bottom: 40px;
+  }
+  p {
+    max-width: 589px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  p + p {
+    margin-top: 30px;
+  }
+}
