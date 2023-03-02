@@ -3,6 +3,7 @@ import './App.css';
 
 
 import images from './../../services/images';
+import DbServices from '../../services/DbServices';
 
 import Hero from '../hero/Hero';
 import About from '../about/About';
@@ -15,7 +16,6 @@ import Filter from '../filter/Filter';
 import CardList from '../cardList/CardList';
 import Good from '../good/Good';
 import OurGoods from '../ourGoods/OurGoods';
-import data from '../../data/data.json';
 
 
 
@@ -24,15 +24,33 @@ import data from '../../data/data.json';
 class App extends Component {
 
   constructor(props) {
-    
     super(props);
-
-    this.state = {
-      data: data.data,
-      term: '',
-      filter: '',
-    }
   }
+
+  state = {
+    data: [],
+    term: '',
+    filter: '',
+  }
+
+
+  dbService = new DbServices();
+
+  componentDidMount() {
+    this.updateGoods();
+  }
+  
+  onGoodsLoaded = (data) => {
+    this.setState({data})
+  }
+
+  updateGoods = () => {
+    this.dbService.getAllGoods()
+      .then((data) => {
+        console.log(data);
+        this.onGoodsLoaded(data)
+      })
+  };
 
 
   onUptateSearch = (term) => {
