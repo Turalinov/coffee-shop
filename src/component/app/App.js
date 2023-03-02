@@ -24,11 +24,14 @@ import OurGoods from '../ourGoods/OurGoods';
 class App extends Component {
 
   constructor(props) {
+    console.log('construct')
     super(props);
   }
 
   state = {
-    data: [],
+    data: [ 
+      {id: 1, src: '/static/media/best1.93b7ca5e4837fd856f71.png', name: 'Solimo Coffee Beans 2 kg', price: '10.73', best: true}
+    ],
     term: '',
     filter: '',
   }
@@ -36,7 +39,8 @@ class App extends Component {
 
   dbService = new DbServices();
 
-  componentDidMount() {
+  componentDidMount(){
+    console.log('mount');
     this.updateGoods();
   }
   
@@ -45,6 +49,7 @@ class App extends Component {
   }
 
   updateGoods = () => {
+    console.log('update');
     this.dbService.getAllGoods()
       .then((data) => {
         console.log(data);
@@ -94,6 +99,7 @@ class App extends Component {
 
   
   render () {
+    console.log('render');
     const {data, term, filter} = this.state
     const visibleData = this.filterPost(this.searchGoods(data, term), filter);
 

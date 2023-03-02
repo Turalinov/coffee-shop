@@ -5,7 +5,6 @@ import Card from '../card/Card';
 const Best = (props) => {
 
   const goods = props.data;
-  console.log(goods);
 
   const bestGoods = goods.filter(good => {
     return good.best;

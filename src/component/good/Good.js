@@ -2,7 +2,6 @@ import ImgContent from '../imgContent/ImgContent';
 import './Good.scss';
 
 const Good = (props) => {
-  console.log(props);
 
   const {src, ...itemsProps} = props.good
 
