@@ -4,6 +4,7 @@ import './App.css';
 
 import images from './../../services/images';
 import DbServices from '../../services/DbServices';
+import ErrorBoundary from '../errorBoundary/ErrorBoundary';
 
 import Hero from '../hero/Hero';
 import About from '../about/About';
@@ -128,7 +129,9 @@ class App extends Component {
             image={images['bgOurCoffee.png']}
             title={'Our Coffee'}
           />
-          <Good good={data[0]}/>
+          <ErrorBoundary>
+            <Good good={data[0]}/>
+          </ErrorBoundary>
           <Footer/>
         </section>
         <div className="about-goods">

@@ -5,6 +5,9 @@ const Good = (props) => {
 
   const {src, ...itemsProps} = props.good
 
+  //ошибка для проверки error boundary
+  //a = 5;
+
   return (
     <section className="good">
       <div className="container">
