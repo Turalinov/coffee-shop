@@ -29,9 +29,7 @@ class App extends Component {
   }
 
   state = {
-    data: [ 
-      {id: 1, src: '/static/media/best1.93b7ca5e4837fd856f71.png', name: 'Solimo Coffee Beans 2 kg', price: '10.73', best: true}
-    ],
+    data: null,
     term: '',
     filter: '',
   }
@@ -51,10 +49,7 @@ class App extends Component {
   updateGoods = () => {
     console.log('update');
     this.dbService.getAllGoods()
-      .then((data) => {
-        console.log(data);
-        this.onGoodsLoaded(data)
-      })
+      .then(this.onGoodsLoaded)
   };
 
 
@@ -103,7 +98,8 @@ class App extends Component {
     const {data, term, filter} = this.state
     const visibleData = this.filterPost(this.searchGoods(data, term), filter);
 
-    return (
+    if (data) {
+      return (
       <div className="App">
         <section className="main-page">
           <Hero/>
@@ -147,6 +143,8 @@ class App extends Component {
         </div>
       </div>
     );
+    }
+    
   }
   
 }
