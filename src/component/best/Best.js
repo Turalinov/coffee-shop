@@ -1,5 +1,4 @@
 import './Best.scss';
-import images from './../../services/images';
 import Card from '../card/Card';
 
 const Best = (props) => {

@@ -21,8 +21,6 @@ const OurGoods = () => {
       
   const src = images['about-good.png'];
   
-
-  
   return (
     <section className='our-goods'>
       <div className="container">
